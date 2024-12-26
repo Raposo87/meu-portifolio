@@ -91,6 +91,9 @@ span{
 .logo span{
     color: var(--main-color);
 }
+.logo img{
+    height: 50px;
+}
 .home-content h1{
     font-size: 4rem;
     font-weight: 700;
