@@ -345,9 +345,11 @@ span{
 .services{
     background: var(--bg-color);
     color: black;
+    padding-top: 0rem;
+    
 }
 .services h2{
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
     color: white;
     font-size: 5rem;
 }
@@ -603,7 +605,7 @@ span{
         width: 56vw;
     }
     .services h2{
-        margin-bottom: 3rem;
+        margin-bottom: 10rem;
     }
     .services-container{
         grid-template-columns: repeat(1,1fr);
