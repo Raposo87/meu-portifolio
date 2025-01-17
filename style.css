@@ -456,20 +456,20 @@ span{
   .card:nth-child(4) { transform: translateX(90%); z-index: 1; }
 
   .card.active {
-    transform: translateX(-90%) scale(1.1) translateZ(50px) !important;
+    transform: translateX(-90%) scale(1.7) translateZ(50px) !important;
     z-index: 5;
   }
 
   .card:nth-child(2).active {
-    transform: translateX(-30%) scale(1.1) translateZ(50px) !important;
+    transform: translateX(-30%) scale(1.7) translateZ(50px) !important;
   }
 
   .card:nth-child(3).active {
-    transform: translateX(30%) scale(1.1) translateZ(50px) !important;
+    transform: translateX(30%) scale(1.7) translateZ(50px) !important;
   }
 
   .card:nth-child(4).active {
-    transform: translateX(90%) scale(1.1) translateZ(50px) !important;
+    transform: translateX(90%) scale(1.7) translateZ(50px) !important;
   }
 
   .card-content {
