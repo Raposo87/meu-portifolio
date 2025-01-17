@@ -395,6 +395,96 @@ span{
     margin: auto;
 }
 
+.certificados {
+    background: var(--secound-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    position: relative;
+  }
+
+  .cards-container {
+    position: relative;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .card {
+    width: 280px;
+    height: 380px;
+    background: var(--secound-bg-color);
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px var(--main-color);
+    position: absolute;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    overflow: hidden;
+    border: solid 2px var(--main-color);
+  }
+
+  .card:nth-child(1) { transform: translateX(-90%); z-index: 4; }
+  .card:nth-child(2) { transform: translateX(-30%); z-index: 3; }
+  .card:nth-child(3) { transform: translateX(30%); z-index: 2; }
+  .card:nth-child(4) { transform: translateX(90%); z-index: 1; }
+
+  .card.active {
+    transform: translateX(-90%) scale(1.1) translateZ(50px) !important;
+    z-index: 5;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  }
+
+  .card:nth-child(2).active {
+    transform: translateX(-30%) scale(1.1) translateZ(50px) !important;
+  }
+
+  .card:nth-child(3).active {
+    transform: translateX(30%) scale(1.1) translateZ(50px) !important;
+  }
+
+  .card:nth-child(4).active {
+    transform: translateX(90%) scale(1.1) translateZ(50px) !important;
+  }
+
+  .card-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    
+  }
+  .card-content img{
+    margin-bottom: 40px;
+  }
+  .card-content h3{
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2;
+    color: white;
+  }
+
+  .card.active .card-content {
+    opacity: 1;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+
+  .card-description {
+    color: #666;
+    line-height: 1.6;
+  }
 .footer{
     position: relative;
     bottom: 0;
@@ -435,6 +525,12 @@ span{
         grid-template-columns: repeat(2,1fr);
         margin: 0 5rem;
     }
+    .certificados {
+        gap: 1rem;
+      }
+      .card {
+        width: 260px;
+      }
 }
 @media (max-width:991px){
     .header{
@@ -460,12 +556,38 @@ span{
     .services{
         padding-bottom: 7rem;
     }
-    .testimonials .wrapper{
-        grid-template-columns: repeat(1,1fr);
-    }
-    .contact form{
+    .cards-container {
         flex-direction: column;
-    }
+        height: auto;
+        width: 280px;
+        margin: 0 auto;
+      }
+
+      .card {
+        position: relative;
+        margin-bottom: -280px; /* Ajuste conforme necessário para sobreposição */
+      }
+
+      .card:nth-child(1) { transform: translateY(0); }
+      .card:nth-child(2) { transform: translateY(30%); }
+      .card:nth-child(3) { transform: translateY(60%); }
+      .card:nth-child(4) { transform: translateY(90%); }
+
+      .card.active {
+        transform: translateY(0) scale(1.1) translateZ(50px) !important;
+      }
+
+      .card:nth-child(2).active {
+        transform: translateY(30%) scale(1.1) translateZ(50px) !important;
+      }
+
+      .card:nth-child(3).active {
+        transform: translateY(60%) scale(1.1) translateZ(50px) !important;
+      }
+
+      .card:nth-child(4).active {
+        transform: translateY(90%) scale(1.1) translateZ(50px) !important;
+      }
     .footer{
         padding: 2rem 3%;
     }
@@ -520,4 +642,41 @@ span{
     .services-container{
         grid-template-columns: repeat(1,1fr);
     }
+    .card {
+        width: 90%;
+        max-width: 350px;
+      }
+    
 }
+@media (max-width: 480px) {
+    .cards-container {
+        margin-left: 30px;
+        width: 180px; /* Ainda menor */
+        margin-bottom: 200%;
+    }
+    .card:nth-child(1) {
+        width: 280px;
+        height: 370px;
+    }
+    .card:nth-child(2) {
+        width: 280px;
+        height: 370px;
+    }
+    .card:nth-child(3) {
+        width: 280px;
+        height: 370px;
+    }
+    .card:nth-child(4) {
+        width: 280px;
+        height: 370px;
+    }
+
+    .card {
+        margin-top: -20%;
+        width: 180px;
+        height: 300px;
+    }
+    .card-content img{
+        height: 100%;
+    }
+  }

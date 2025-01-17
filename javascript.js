@@ -25,3 +25,26 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active')
 }
+
+// -------- efeito cartas --------//
+
+const cards = document.querySelectorAll('.card');
+
+cards.forEach(card => {
+  card.addEventListener('click', () => {
+    // Toggle active class
+    if (card.classList.contains('active')) {
+      card.classList.remove('active');
+    } else {
+      cards.forEach(c => c.classList.remove('active'));
+      card.classList.add('active');
+    }
+  });
+});
+
+// Opcional: Remove active ao clicar fora das cartas
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.card')) {
+    cards.forEach(card => card.classList.remove('active'));
+  }
+});
