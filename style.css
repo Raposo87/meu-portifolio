@@ -403,12 +403,13 @@ span{
   }
 
   .section-title h2 {
-    font-size: 2.5rem;
+    font-size: 5rem;
     font-weight: bold;
     margin: 0;
     padding-bottom: 1rem;
     position: relative;
     display: inline-block;
+    color: white;
   }
 
   
