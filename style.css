@@ -461,6 +461,7 @@ span{
     
   }
   .card-content img{
+    height: 100%;
     margin-bottom: 40px;
   }
   .card-content h3{
