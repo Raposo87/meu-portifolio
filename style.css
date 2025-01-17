@@ -650,25 +650,25 @@ span{
 }
 @media (max-width: 480px) {
     .cards-container {
-        margin-left: 30px;
+        margin-left: 31px;
         width: 180px; /* Ainda menor */
         margin-bottom: 200%;
     }
     .card:nth-child(1) {
         width: 280px;
-        height: 370px;
+        height: 360px;
     }
     .card:nth-child(2) {
         width: 280px;
-        height: 370px;
+        height: 360px;
     }
     .card:nth-child(3) {
         width: 280px;
-        height: 370px;
+        height: 360px;
     }
     .card:nth-child(4) {
         width: 280px;
-        height: 370px;
+        height: 360px;
     }
 
     .card {
