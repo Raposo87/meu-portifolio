@@ -522,7 +522,6 @@ span{
 }
 .footer .social{
     text-align: center;
-    padding-bottom: 25px;
     color: var(--main-color);
 }
 .footer .social a{
@@ -589,6 +588,7 @@ span{
         height: auto;
         width: 280px;
         margin: 0 auto;
+        margin-left: 21.8rem;
       }
 
       .card {
@@ -624,7 +624,8 @@ span{
         transform: translateY(90%) scale(1.1) translateZ(50px) !important;
       }
     .footer{
-        padding: 2rem 3%;
+        padding: 3rem 3%;
+        margin-top: 75rem;
     }
 }
 @media (max-width: 895px){
