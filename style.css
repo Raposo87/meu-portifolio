@@ -313,7 +313,7 @@ span{
     transition: 0.3s ease-in-out;
 }
 .timeline-content img{
-    width: 30rem;
+    width: 27rem;
     height: 15rem;
     border: 1px solid var(--main-color);
     border-radius: 10px;
@@ -625,7 +625,6 @@ span{
       }
     .footer{
         padding: 3rem 3%;
-        margin-top: 75rem;
     }
 }
 @media (max-width: 895px){
@@ -741,7 +740,7 @@ span{
         padding-bottom: 1rem;
         position: relative;
         display: inline-block;
-        bottom: 6rem;
+        bottom: 3rem;
       }
     
   }
