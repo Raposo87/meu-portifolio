@@ -194,23 +194,23 @@ span{
 @keyframes words{
     0%,
     20%{
-        content: "Web Designer.";
+        content: "Web Designer";
     }
     21%,
     40%{
-        content: "Front-end Designer.";
+        content: " Desenvolvedor Front-end";
     }
     41%,
     60%{
-        content: "Web Developer.";
+        content: "Profissional";
     }
     61%,
     80%{
-        content: "Curioso!";
+        content: "Gestor de tráfego";
     }
     81%,
     100%{
-        content: "Determinado.";
+        content: "Determinado";
     }
 }
 @keyframes typing{
