@@ -1,185 +1,422 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RaposoWeb</title>
-    <meta name="keywords" content="Site, portifolio, site para empresa, fazer site">
-    <meta name="description" content="Site de portifolio proficional, fazer sites">
-    <meta name="author" content="index, follow">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Igor Raposo - Desenvolvedor Front-end | Criação de Sites Profissionais
+      Portugal e Brasil
+    </title>
 
-</head>
-<body>
+    
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-KWJMCCMLLJ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
+      gtag("config", "G-KWJMCCMLLJ");
+    </script>
+
+    <!-- Primary Meta Tags -->
+    <meta
+      name="title"
+      content="Igor Raposo - Desenvolvedor Front-end | Criação de Sites Profissionais Portugal e Brasil"
+    />
+    <meta
+      name="description"
+      content="Desenvolvedor Front-end especializado em criação de sites profissionais para Portugal e Brasil. Web design, desenvolvimento de sites responsivos, e-commerce e gestão de tráfego. Transformo suas ideias em realidade digital com interfaces modernas e otimizadas para SEO."
+    />
+    <meta
+      name="keywords"
+      content="desenvolvedor front-end, criação de sites, web design, desenvolvimento web, sites profissionais, programador front-end, sites responsivos, gestor de tráfego, Google Analytics, Google Ads, HTML, CSS, JavaScript"
+    />
+    <meta name="author" content="Igor Raposo" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://raposoweb.com/" />
+    <meta
+      property="og:title"
+      content="Igor Raposo - Desenvolvedor Front-end | Criação de Sites Profissionais"
+    />
+    <meta
+      property="og:description"
+      content="Desenvolvedor Front-end especializado em criação de sites profissionais, web design e gestão de tráfego. Transformo suas ideias em realidade digital."
+    />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/dqn2v9mtu/image/upload/v1746108972/RAPOSO_white_1_ochd3u.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://raposoweb.com/" />
+    <meta
+      property="twitter:title"
+      content="Igor Raposo - Desenvolvedor Front-end | Criação de Sites Profissionais"
+    />
+    <meta
+      property="twitter:description"
+      content="Desenvolvedor Front-end especializado em criação de sites profissionais, web design e gestão de tráfego. Transformo suas ideias em realidade digital."
+    />
+    <meta
+      property="twitter:image"
+      content="https://res.cloudinary.com/dqn2v9mtu/image/upload/v1746108972/RAPOSO_white_1_ochd3u.png"
+    />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Igor Raposo",
+        "jobTitle": "Desenvolvedor Front-end",
+        "url": "https://raposoweb.com",
+        "sameAs": [
+          "https://www.linkedin.com/in/igor-raposo-146929294/",
+          "https://github.com/Raposo87",
+          "https://www.instagram.com/raposo_87/"
+        ],
+        "description": "Desenvolvedor Front-end especializado em criação de sites profissionais, web design e gestão de tráfego.",
+        "skills": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Web Design",
+          "Responsive Design",
+          "Google Analytics",
+          "Google Ads"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Desenvolvimento Web",
+            "description": "Criação de sites profissionais e responsivos"
+          }
+        }
+      }
+    </script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+    <link rel="canonical" href="https://raposoweb.com" />
+  </head>
+  <body>
     <header class="header" alt="front-end">
+      <img
+        class="logo"
+        src="https://res.cloudinary.com/dqn2v9mtu/image/upload/v1746108972/RAPOSO_white_1_ochd3u.png"
+        alt=""
+      />
 
-        <img class="logo" src="https://res.cloudinary.com/dqn2v9mtu/image/upload/v1746108972/RAPOSO_white_1_ochd3u.png" alt="">
-        
+      <i class="bx bx-menu" id="menu-icon"></i>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
-
-        <nav class="navbar">
-            <a href="#home" class="active">Início</a>
-            <a href="#services">Serviços</a>
-            <a href="#education">Projetos</a>
-            <a href="#certificados">Certificados</a>
-        </nav>
-
+      <nav class="navbar">
+        <a href="#home" class="active">Início</a>
+        <a href="#services">Serviços</a>
+        <a href="#education">Projetos</a>
+        <a href="#certificados">Certificados</a>
+      </nav>
     </header>
 
     <section class="home" id="home">
-
-        <div class="home-content">
-            <h1> Olá, meu nome é <span>Igor Raposo</span></h1>
-            <h3 class="text-animation">Eu sou <span></span></h3>
-            <p>Transformo suas ideias em realidade digital. Como desenvolvedor front-end, me dedico a criar interfaces intuitivas e visualmente atraentes que capturam a essência da sua marca. Criando soluções personalizadas para diversos clientes, sempre buscando a satisfação.</p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/igor-raposo-146929294/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/Raposo87" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="https://www.instagram.com/raposo_87/" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
-                <a href="HTTPS://wa.me/+351915509008" target="_blank"><i class='bx bxl-whatsapp-square' ></i></a>
-            </div>
+      <div class="home-content">
+        <h1>Olá, meu nome é <span>Igor Raposo</span></h1>
+        <h3 class="text-animation">Eu sou <span></span></h3>
+        <p>
+          Transformo suas ideias em realidade digital. Como desenvolvedor
+          front-end, me dedico a criar interfaces intuitivas e visualmente
+          atraentes que capturam a essência da sua marca. Criando soluções
+          personalizadas para diversos clientes, sempre buscando a satisfação.
+        </p>
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/igor-raposo-146929294/"
+            target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://github.com/Raposo87" target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="https://www.instagram.com/raposo_87/" target="_blank"
+            ><i class="bx bxl-instagram-alt"></i
+          ></a>
+          <a href="HTTPS://wa.me/+351915509008" target="_blank"
+            ><i class="bx bxl-whatsapp-square"></i
+          ></a>
         </div>
-
+      </div>
     </section>
 
     <section class="services" id="services">
-        <h2 class="heading">Serviços</h2>
+      <h2 class="heading">Serviços</h2>
 
-        <div class="services-container">
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Web Design</h4>
-                    <p>Design: Criação de layouts modernos e elegantes. <br>
-                        Desenvolvimento: Codificação em HTML, CSS e JavaScript. <br>
-                        Responsividade: Adaptação para todos os dispositivos.</p>
-                </div>
-            </div>
-
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Front-end</h4>
-                    <p>Crio interfaces intuitivas e esteticamente agradáveis que guiam os usuários em uma jornada tranquila e serena. Acredito que um bom design não é apenas visualmente atraente, mas também funcional e acessível.</p>
-                </div>
-            </div>
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Gestor de tráfego</h4>
-                    <p>Como gestor de tráfego com Google Analytics e Ads planejo, executo e otimizo campanhas de anúncios pagos, analisando dados do Analytics para direcionar o público certo e maximizar o retorno sobre o investimento. Sua importância reside em garantir que o investimento em publicidade online seja eficiente, atraindo tráfego qualificado e aumentando as chances de conversão e sucesso da estratégia de marketing.</p>
-                </div>
-            </div>
+      <div class="services-container">
+        <div class="service-box">
+          <div class="service-info">
+            <h4>Web Design</h4>
+            <p>
+              Design: Criação de layouts modernos e elegantes. <br />
+              Desenvolvimento: Codificação em HTML, CSS e JavaScript. <br />
+              Responsividade: Adaptação para todos os dispositivos.
+            </p>
+          </div>
         </div>
+
+        <div class="service-box">
+          <div class="service-info">
+            <h4>Front-end</h4>
+            <p>
+              Crio interfaces intuitivas e esteticamente agradáveis que guiam os
+              usuários em uma jornada tranquila e serena. Acredito que um bom
+              design não é apenas visualmente atraente, mas também funcional e
+              acessível.
+            </p>
+          </div>
+        </div>
+        <div class="service-box">
+          <div class="service-info">
+            <h4>Gestor de tráfego</h4>
+            <p>
+              Como gestor de tráfego com Google Analytics e Ads planejo, executo
+              e otimizo campanhas de anúncios pagos, analisando dados do
+              Analytics para direcionar o público certo e maximizar o retorno
+              sobre o investimento. Sua importância reside em garantir que o
+              investimento em publicidade online seja eficiente, atraindo
+              tráfego qualificado e aumentando as chances de conversão e sucesso
+              da estratégia de marketing.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="education" id="education">
-        <h2 class="heading">Projetos</h2>
+      <h2 class="heading">Projetos</h2>
 
-        <div class="timeline-items">
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2025</div>
-                    <div class="timeline-content">
-                        <h3> <a href="https://raposo87.github.io/FayaKayano/" target="_blank"><em>Website para Artista Multimídia: Faya Kayano</em></a> </h3>
-                        <p>Projeto: Site Biográfico para Artista Musical
-
-                            Desenvolvi um website imersivo para o artista Fayakayano, combinando design contemporâneo com interatividade para refletir sua identidade artística multicultural. O projeto destacou-se por:
-                            
-                            Design Visual Dinâmico: Implementei animações fluidas com GSAP, incluindo um carrossel infinito interativo que responde a gestos do usuário (arrastar/inércia), reforçando a energia do artista.
-                            
-                            Experiência Multimídia: Integrei conteúdos de plataformas como YouTube e Spotify diretamente no layout, com seções dedicadas a vídeos e galeria de imagens responsivas.
-                            
-                            Técnicas Avançadas: Utilizei CSS moderno (gradientes animados, efeitos hover) e JavaScript para criar transições suaves entre seções, garantindo performance em dispositivos móveis.</p>
-                        <a href="https://raposo87.github.io/FayaKayano/" target="_blank"><img src="https://i.pinimg.com/736x/c8/5c/91/c85c910184be2f09dce5ff118e789f17.jpg" alt="Site Dra. Nicole Raposo"></a>
-                    </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2025</div>
-                    <div class="timeline-content">
-                        <h3> <a href="https://raposo87.github.io/site-nicole/" target="_blank"><em>Site Dra. Nicole Raposo</em></a> </h3>
-                        <p>Esse projeto apresenta uma plataforma profissional para naturopatia e massagens terapêuticas, desenvolvida com HTML, CSS e JavaScript. Com design responsivo em tons de verde e azul, o site oferece navegação intuitiva entre serviços detalhados (naturopatia, reflexologia, acupuntura auricular, massagens terapêuticas e mais), depoimentos de clientes em carrossel interativo, informações sobre seu livro e área de contato. Os recursos técnicos incluem animações com ScrollReveal, botão "voltar ao topo", menu hambúrguer para dispositivos móveis e alertas personalizados, proporcionando uma experiência de usuário fluida e esteticamente alinhada à área de saúde natural.</p>
-                        <a href="https://raposo87.github.io/site-nicole/" target="_blank"><img src="https://i.pinimg.com/736x/27/0a/9a/270a9a0059a0b00a1219eeb075ec8c89.jpg" alt="Site Dra. Nicole Raposo"></a>
-                    </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2024</div>
-                    <div class="timeline-content">
-                        <h3> <a href="https://raposo87.github.io/kula-yoga/"><em>Kula Yoga</em></a></h3>
-                        <p>Este projeto foi desenvolvido com o objetivo de proporcionar uma experiência digital imersiva, onde os praticantes podem encontrar tudo o que precisam para aprofundar sua prática. Através de um design intuitivo e conteúdo relevante, o site oferece informações sobre aulas, professores, benefícios do yoga e muito mais, convidando os visitantes a embarcarem em uma jornada de bem-estar.</p>
-                        <a href="https://raposo87.github.io/kula-yoga/" target="_blank"><img src="https://i.pinimg.com/736x/92/08/ea/9208ea8a98e5eb8955e2926faf58a6eb.jpg" alt=""></a>
-                    </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2024</div>
-                    <div class="timeline-content">
-                        <h3> <a href="https://raposo87.github.io/menu-restaurante/" target="_blank"><em>Menu Restaurante</em></a> </h3>
-                        <p>Desenvolvi um menu interativo para restaurante com suporte a dois idiomas (português e inglês), permitindo a navegação entre pratos principais, bebidas e sobremesas. O projeto inclui imagens dinâmicas, descrições detalhadas e um submenu para sucos naturais. Com design responsivo, ele se adapta a dispositivos móveis, solicitando a rotação para o modo paisagem. Utilizando HTML, CSS e JavaScript, demonstro habilidades em front-end, interatividade e gerenciamento de conteúdo multilíngue.</p>
-                        <a href="https://raposo87.github.io/menu-restaurante/"><img src="https://i.pinimg.com/736x/c8/16/45/c816455f22c171573587bce06538c272.jpg" alt="Menu Restaurante"></a>
-                    </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2024</div>
-                    <div class="timeline-content">
-                        <h3> <a href="https://raposo87.github.io/TramontoDecor/index.js.html" target="_blank"><em>Tramonto Decor</em></a> </h3>
-                        <p>Desenvolvi um site institucional para a Tramonto Decor utilizando as linguagens HTML, CSS e JavaScript. O site apresenta de forma clara e intuitiva a variedade de produtos oferecidos pela empresa, como persianas, cortinas e toldos. A interface interativa permite aos visitantes navegar facilmente pelo catálogo, visualizando imagens de alta qualidade e informações detalhadas sobre cada produto.</p>
-                        <a href="https://raposo87.github.io/TramontoDecor/index.js.html" target="_blank"><img src="https://i.pinimg.com/736x/89/95/76/8995763e51f3b6a6800d270928de6d22.jpg" alt=""></a>
-                    </div>
-            </div>
-
+      <div class="timeline-items">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2025</div>
+          <div class="timeline-content">
+            <h3>
+              <a href="https://raposo87.github.io/FayaKayano/" target="_blank"
+                ><em>Website para Artista Multimídia: Faya Kayano</em></a
+              >
+            </h3>
+            <p>
+              Projeto: Site Biográfico para Artista Musical Desenvolvi um
+              website imersivo para o artista Fayakayano, combinando design
+              contemporâneo com interatividade para refletir sua identidade
+              artística multicultural. O projeto destacou-se por: Design Visual
+              Dinâmico: Implementei animações fluidas com GSAP, incluindo um
+              carrossel infinito interativo que responde a gestos do usuário
+              (arrastar/inércia), reforçando a energia do artista. Experiência
+              Multimídia: Integrei conteúdos de plataformas como YouTube e
+              Spotify diretamente no layout, com seções dedicadas a vídeos e
+              galeria de imagens responsivas. Técnicas Avançadas: Utilizei CSS
+              moderno (gradientes animados, efeitos hover) e JavaScript para
+              criar transições suaves entre seções, garantindo performance em
+              dispositivos móveis.
+            </p>
+            <a href="https://raposo87.github.io/FayaKayano/" target="_blank"
+              ><img
+                src="https://i.pinimg.com/736x/c8/5c/91/c85c910184be2f09dce5ff118e789f17.jpg"
+                alt="Site Dra. Nicole Raposo"
+            /></a>
+          </div>
         </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2025</div>
+          <div class="timeline-content">
+            <h3>
+              <a href="https://raposo87.github.io/site-nicole/" target="_blank"
+                ><em>Site Dra. Nicole Raposo</em></a
+              >
+            </h3>
+            <p>
+              Esse projeto apresenta uma plataforma profissional para
+              naturopatia e massagens terapêuticas, desenvolvida com HTML, CSS e
+              JavaScript. Com design responsivo em tons de verde e azul, o site
+              oferece navegação intuitiva entre serviços detalhados
+              (naturopatia, reflexologia, acupuntura auricular, massagens
+              terapêuticas e mais), depoimentos de clientes em carrossel
+              interativo, informações sobre seu livro e área de contato. Os
+              recursos técnicos incluem animações com ScrollReveal, botão
+              "voltar ao topo", menu hambúrguer para dispositivos móveis e
+              alertas personalizados, proporcionando uma experiência de usuário
+              fluida e esteticamente alinhada à área de saúde natural.
+            </p>
+            <a href="https://raposo87.github.io/site-nicole/" target="_blank"
+              ><img
+                src="https://i.pinimg.com/736x/27/0a/9a/270a9a0059a0b00a1219eeb075ec8c89.jpg"
+                alt="Site Dra. Nicole Raposo"
+            /></a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2024</div>
+          <div class="timeline-content">
+            <h3>
+              <a href="https://raposo87.github.io/kula-yoga/"
+                ><em>Kula Yoga</em></a
+              >
+            </h3>
+            <p>
+              Este projeto foi desenvolvido com o objetivo de proporcionar uma
+              experiência digital imersiva, onde os praticantes podem encontrar
+              tudo o que precisam para aprofundar sua prática. Através de um
+              design intuitivo e conteúdo relevante, o site oferece informações
+              sobre aulas, professores, benefícios do yoga e muito mais,
+              convidando os visitantes a embarcarem em uma jornada de bem-estar.
+            </p>
+            <a href="https://raposo87.github.io/kula-yoga/" target="_blank"
+              ><img
+                src="https://i.pinimg.com/736x/92/08/ea/9208ea8a98e5eb8955e2926faf58a6eb.jpg"
+                alt=""
+            /></a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2024</div>
+          <div class="timeline-content">
+            <h3>
+              <a
+                href="https://raposo87.github.io/menu-restaurante/"
+                target="_blank"
+                ><em>Menu Restaurante</em></a
+              >
+            </h3>
+            <p>
+              Desenvolvi um menu interativo para restaurante com suporte a dois
+              idiomas (português e inglês), permitindo a navegação entre pratos
+              principais, bebidas e sobremesas. O projeto inclui imagens
+              dinâmicas, descrições detalhadas e um submenu para sucos naturais.
+              Com design responsivo, ele se adapta a dispositivos móveis,
+              solicitando a rotação para o modo paisagem. Utilizando HTML, CSS e
+              JavaScript, demonstro habilidades em front-end, interatividade e
+              gerenciamento de conteúdo multilíngue.
+            </p>
+            <a href="https://raposo87.github.io/menu-restaurante/"
+              ><img
+                src="https://i.pinimg.com/736x/c8/16/45/c816455f22c171573587bce06538c272.jpg"
+                alt="Menu Restaurante"
+            /></a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2024</div>
+          <div class="timeline-content">
+            <h3>
+              <a
+                href="https://raposo87.github.io/TramontoDecor/index.js.html"
+                target="_blank"
+                ><em>Tramonto Decor</em></a
+              >
+            </h3>
+            <p>
+              Desenvolvi um site institucional para a Tramonto Decor utilizando
+              as linguagens HTML, CSS e JavaScript. O site apresenta de forma
+              clara e intuitiva a variedade de produtos oferecidos pela empresa,
+              como persianas, cortinas e toldos. A interface interativa permite
+              aos visitantes navegar facilmente pelo catálogo, visualizando
+              imagens de alta qualidade e informações detalhadas sobre cada
+              produto.
+            </p>
+            <a
+              href="https://raposo87.github.io/TramontoDecor/index.js.html"
+              target="_blank"
+              ><img
+                src="https://i.pinimg.com/736x/89/95/76/8995763e51f3b6a6800d270928de6d22.jpg"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="certificados" id="certificados">
-        <div class="section-title">
-            <h2>Certificados</h2>
+      <div class="section-title">
+        <h2>Certificados</h2>
+      </div>
+      <div class="cards-container">
+        <div class="card">
+          <div class="card-content">
+            <h3 class="card-title">JavaScript</h3>
+            <img
+              src="https://i.pinimg.com/736x/bd/34/a8/bd34a806f12dc2590dee5b86012efd30.jpg"
+              alt="certificado"
+            />
           </div>
-        <div class="cards-container">
-            <div class="card">
-              <div class="card-content">
-                <h3 class="card-title">JavaScript</h3>
-                <img src="https://i.pinimg.com/736x/bd/34/a8/bd34a806f12dc2590dee5b86012efd30.jpg" alt="certificado">
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-content">
-                <h3 class="card-title">Análise Dados</h3>
-                <img src="https://i.pinimg.com/736x/49/7c/dc/497cdcb0df5f6e14f9f8ffea52c7bf0d.jpg" alt="">
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-content">
-                <h3 class="card-title">Python 3</h3>
-                <img src="https://i.pinimg.com/474x/6f/27/d7/6f27d7e74c9f3a9337918facbed47825.jpg">
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-content">
-                <h3 class="card-title">Análise Dados</h3>
-                <img src="https://i.pinimg.com/736x/30/16/9e/30169ea70544edf0dec32ce9b37a67b8.jpg" alt="">
-              </div>
-            </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3 class="card-title">Análise Dados</h3>
+            <img
+              src="https://i.pinimg.com/736x/49/7c/dc/497cdcb0df5f6e14f9f8ffea52c7bf0d.jpg"
+              alt=""
+            />
           </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3 class="card-title">Python 3</h3>
+            <img
+              src="https://i.pinimg.com/474x/6f/27/d7/6f27d7e74c9f3a9337918facbed47825.jpg"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3 class="card-title">Análise Dados</h3>
+            <img
+              src="https://i.pinimg.com/736x/30/16/9e/30169ea70544edf0dec32ce9b37a67b8.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer class="footer">
-        <div class="social">
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/igor-raposo-146929294/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/Raposo87" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="https://www.instagram.com/raposo_87/" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
-                <a href="HTTPS://wa.me/+351915509008" target="_blank"><i class='bx bxl-whatsapp-square' ></i></a>
-            </div>
+      <div class="social">
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/igor-raposo-146929294/"
+            target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://github.com/Raposo87" target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="https://www.instagram.com/raposo_87/" target="_blank"
+            ><i class="bx bxl-instagram-alt"></i
+          ></a>
+          <a href="HTTPS://wa.me/+351915509008" target="_blank"
+            ><i class="bx bxl-whatsapp-square"></i
+          ></a>
         </div>
+      </div>
     </footer>
-</body>
-<script src="javascript.js"></script>
+  </body>
+  <script src="javascript.js"></script>
 </html>
